@@ -13,5 +13,5 @@ RUN python3 -m pip install -r requirements.txt
 COPY . .
 
 # Specify the command to run when the container starts
-CMD ["jupyter-lab", "carbon_emission_analysis.ipynb"]
+CMD ["jupyter-lab", "--ip=0.0.0.0", "--allow-root", "carbon_emission_analysis.ipynb"]
 
