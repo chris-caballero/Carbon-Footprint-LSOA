@@ -19,6 +19,15 @@ The repository contains the following files:
 
 ## Instructions
 
+### Run with docker
+
+1. Run `docker build -t carbon_emission_notebook`.
+2. When the image is built, run `docker-compose up` to run the Jupyter server.
+3. Lastly, copy the following link in your browser:
+  - [http://127.0.0.1:8888/lab?token=docker](http://127.0.0.1:8888/lab?token=docker)
+
+### Local run using requirements.txt
+
 1. Clone the repository to your local machine.
 2. Set up the required dependencies and environment based on the `requirements.txt` file.
 3. Run the Jupyter notebook `carbon_emissions_analysis.ipynb` to execute the analysis.
