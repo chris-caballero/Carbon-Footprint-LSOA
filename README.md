@@ -7,16 +7,6 @@ The data used in this analysis is available in the following publication:
 
 Morgan, Malcolm, Anable, Jillian, & Lucas, Karen. (2021). A place-based carbon calculator for England. Presented at the 29th Annual GIS Research UK Conference (GISRUK), Cardiff, Wales, UK (Online): Zenodo. [http://doi.org/10.5281/zenodo.4665852](http://doi.org/10.5281/zenodo.4665852)
 
-## Contents
-
-The repository contains the following files:
-
-- `requirements.txt`: The necessary requirements for running the Jupyter Notebook.
-- `carbon_emissions_analysis.ipynb`: Jupyter Notebook containing all relevant data exploration.
-- `utils.py`: Utility functions for data loading and manipulation.
-- `visutils.py`: Utility functions for data visualization.
-- `data/`: Directory containing the data files.
-
 ## Instructions
 
 [![Docker Repository](https://img.shields.io/badge/Docker%20Hub-Repository-blue)](https://hub.docker.com/repository/docker/chrismcaballero/carbon-footprint-analysis/general) <br>
@@ -24,20 +14,17 @@ To download the image from my Docker Hub repository.
 
 ### Run with docker
 
-1. Run `docker build -t carbon_emission_notebook` or download the image linked above.
-2. When the image is built, run `docker-compose up` to run the Jupyter server.
-3. Lastly, copy the following link in your browser:
-```bash
-http://127.0.0.1:8888/lab?token=docker
-```
+1. Run **`docker build -t carbon_emission_notebook`** or download the image linked above.
+2. When the image is built, run **`docker-compose up`** to run the Jupyter server.
+3. Lastly, follow the link: **http://127.0.0.1:8888/lab?token=docker**
 
 ### Local run using requirements.txt
 
 1. Clone the repository to your local machine.
-2. Set up the required dependencies and environment based on the `requirements.txt` file.
-3. Run the Jupyter notebook `carbon_emissions_analysis.ipynb` to execute the analysis.
+2. Set up the required dependencies and environment based on the **`requirements.txt`** file.
+3. Run the Jupyter notebook **`carbon_emissions_analysis.ipynb`** to execute the analysis.
 
-The notebook performs the following tasks:
+## The notebook performs the following tasks:
 
 1. Loads and extracts the data files from the provided zip archives.
 2. Loads the data into Pandas dataframes for further analysis.
@@ -49,6 +36,16 @@ The notebook performs the following tasks:
 8. Imputes missing values in the emission grades columns.
 
 Please refer to the notebook for detailed code and analysis.
+
+## Contents
+
+The repository contains the following files:
+
+- `requirements.txt`: The necessary requirements for running the Jupyter Notebook.
+- `carbon_emissions_analysis.ipynb`: Jupyter Notebook containing all relevant data exploration.
+- `utils.py`: Utility functions for data loading and manipulation.
+- `visutils.py`: Utility functions for data visualization.
+- `data/`: Directory containing the data files.
 
 ## Data Citation
 
