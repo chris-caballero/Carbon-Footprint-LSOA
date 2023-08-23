@@ -14,9 +14,9 @@ To download the image from my Docker Hub repository.
 
 ### Run with docker
 
-1. Run **`docker build -t carbon_emission_notebook`** or download the image linked above.
-2. When the image is built, run **`docker-compose up`** to run the Jupyter server.
-3. Lastly, follow the link: **http://127.0.0.1:8888/lab?token=docker**
+1. Run **`docker build -t <image-name>`** or download the image linked above.
+2. Run **`docker run -p 8888:8888 <image-name>`**.
+2. Lastly, follow the provided link: http://127.0.0.1:8888.
 
 ### Local run using requirements.txt
 
