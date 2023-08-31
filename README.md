@@ -16,7 +16,7 @@ To download the image from my Docker Hub repository.
 
 1. Run **`docker build -t <image-name>`** or download the image linked above.
 2. Run **`docker run -p 8888:8888 <image-name>`**.
-2. Lastly, follow the link http://127.0.0.1:8888?token=docker.
+3. Lastly, follow the link http://127.0.0.1:8888?token=docker.
 
 ### Local run using requirements.txt
 
